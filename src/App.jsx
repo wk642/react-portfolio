@@ -3,6 +3,7 @@ import profilePicture from './assets/profilePicture.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import SocialMedia from './components/SocialMedia';
+import TechStack from './components/TechStack';
 
 export default function App() {
   return (
@@ -34,26 +35,14 @@ export default function App() {
               </p>
             </section>
 
-            <section className="mb-10 flex-1">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Tech Stack</h2>
-              <ul className="list-disc list-inside text-gray-700">
-                <li>REACT</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>Tailwind</li>
-                <li>Postgress</li>
-                <li>Epress</li>
-                <li>Node</li>
-              </ul>
-            </section>
+            <TechStack className="mb-10 flex-1" /> 
 
             <section className="mb-10 flex-1">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact</h2>
               <p className="text-gray-700">
                 Feel free to reach out! You can connect with me via email{' '}
                 <a href="mailto:w642kelley@gmail.com" className="text-orange-500 hover:underline">
-                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                  <FontAwesomeIcon icon={ faEnvelope } size="lg" />
                 </a>
               </p>
             </section>
