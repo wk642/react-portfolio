@@ -3,19 +3,20 @@ import profilePicture from './assets/profilePicture.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import SocialMedia from './components/SocialMedia';
+import TechStack from './components/TechStack';
 
 export default function App() {
   return (
     <>
-      <main className="font-tillana">
-        <header className="bg-gray-300 py-8 mt-5">
+      <main className="font-tillana h-screen">
+        <header className="bg-gray-300 py-8 mt-1">
           <div className="container mx-auto flex flex-col items-center">
             <img
               src={profilePicture}
               alt="Profile picture of Winnie Kelley"
               className="rounded-full w-32 h-32 object-cover shadow-md"
             />
-            <h1 className="text-orange-500 text-center text-6xl mt-6">
+            <h1 className="text-orange-500 text-center text-4xl mt-3">
               Winnie Kelley
             </h1>
             <p className="text-gray-600 text-lg mt-2">Software Engineer</p>
@@ -34,26 +35,14 @@ export default function App() {
               </p>
             </section>
 
-            <section className="mb-10 flex-1">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">Tech Stack</h2>
-              <ul className="list-disc list-inside text-gray-700">
-                <li>REACT</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>Tailwind</li>
-                <li>Postgress</li>
-                <li>Epress</li>
-                <li>Node</li>
-              </ul>
-            </section>
+            <TechStack className="mb-10 flex-1" /> 
 
             <section className="mb-10 flex-1">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact</h2>
               <p className="text-gray-700">
                 Feel free to reach out! You can connect with me via email{' '}
                 <a href="mailto:w642kelley@gmail.com" className="text-orange-500 hover:underline">
-                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                  <FontAwesomeIcon icon={ faEnvelope } size="lg" />
                 </a>
               </p>
             </section>
